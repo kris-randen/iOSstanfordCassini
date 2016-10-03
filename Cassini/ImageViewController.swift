@@ -41,7 +41,10 @@ class ImageViewController: UIViewController
         super.viewDidLoad()
         
         view.addSubview(imageView)
+        
         //imageURL = DemoURL.NASAImageNamed(imageName: "Saturn")
+        
         imageURL = NSURL(string: DemoURL.Stanford)
+        
     }
 }
