@@ -81,11 +81,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Q1-ME-8we"/>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="K8y-yR-SUS">
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="6Q1-ME-8we" secondAttribute="trailing" id="DEX-pb-sDJ"/>
                             <constraint firstItem="6Q1-ME-8we" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KHF-jV-egL"/>
+                            <constraint firstItem="K8y-yR-SUS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bY0-3h-Tu8"/>
+                            <constraint firstItem="K8y-yR-SUS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fJg-FE-Rbo"/>
                             <constraint firstItem="6Q1-ME-8we" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="o1g-Ya-GQp"/>
                             <constraint firstItem="6Q1-ME-8we" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oV8-6f-Kxw"/>
                         </constraints>
@@ -93,6 +98,7 @@
                     <navigationItem key="navigationItem" id="aqI-eU-T93"/>
                     <connections>
                         <outlet property="scrollView" destination="6Q1-ME-8we" id="0Bg-G9-aXa"/>
+                        <outlet property="spinner" destination="K8y-yR-SUS" id="m9a-2d-ggb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
