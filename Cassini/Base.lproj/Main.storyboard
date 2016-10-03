@@ -36,21 +36,21 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
                                         <state key="normal" title="Earth"/>
                                         <connections>
-                                            <segue destination="BYm-FA-pgs" kind="showDetail" identifier="Show Image" id="3WL-R7-cfq"/>
+                                            <action selector="showImage:" destination="6BD-I6-YnS" eventType="touchUpInside" id="NaX-nj-OFb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iep-Ct-OVK">
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
                                         <state key="normal" title="Cassini"/>
                                         <connections>
-                                            <segue destination="BYm-FA-pgs" kind="showDetail" identifier="Show Image" id="PHy-9o-GeY"/>
+                                            <action selector="showImage:" destination="6BD-I6-YnS" eventType="touchUpInside" id="hfI-oL-idy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipI-QK-d6l">
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
                                         <state key="normal" title="Saturn"/>
                                         <connections>
-                                            <segue destination="BYm-FA-pgs" kind="showDetail" identifier="Show Image" id="qgX-Xk-QPz"/>
+                                            <action selector="showImage:" destination="6BD-I6-YnS" eventType="touchUpInside" id="M0J-Ud-Pwa"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -142,7 +142,4 @@
             <point key="canvasLocation" x="-842.39999999999998" y="1016.9415292353824"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="yxf-IM-OT3"/>
-    </inferredMetricsTieBreakers>
 </document>

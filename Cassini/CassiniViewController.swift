@@ -25,6 +25,14 @@ class CassiniViewController: UIViewController, UISplitViewControllerDelegate
         }
     }
     
+    @IBAction func showImage(_ sender: UIButton) {
+        if let ivc = splitViewController?.viewControllers.last?.content as? ImageViewController {
+            let imageName = sender.currentTitle
+            ivc.imageURL = DemoURL.NASAImageNamed(imageName: imageName)
+            ivc.title = imageName
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         splitViewController?.delegate = self
