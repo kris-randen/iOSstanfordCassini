@@ -50,9 +50,5 @@ class ImageViewController: UIViewController
         
         scrollView.addSubview(imageView)
         
-        //imageURL = DemoURL.NASAImageNamed(imageName: "Saturn")
-        
-        imageURL = NSURL(string: DemoURL.Stanford)
-        
     }
 }
