@@ -22,15 +22,15 @@ class ImageViewController: UIViewController, UIScrollViewDelegate
     private func fetchImage() {
         if let url = imageURL {
             DispatchQueue.global(qos: .userInitiated).async {
-                self.spinner?.startAnimating()
+                //self.spinner?.startAnimating() // Starting to animate here somehow made the spinner disappear. Starting the spinner at button click makes it work for certain.
                 let contentsOfURL = NSData(contentsOf: url as URL)
                 DispatchQueue.main.async {
                     if url == self.imageURL {
                         if let imageData = contentsOfURL  {
                             self.image = UIImage(data: imageData as Data)
-                        } else {
-                            self.spinner.stopAnimating()
-                        }
+                        } //else {
+                            //self.spinner.stopAnimating()
+                        //}
                     } else {
                         print("Ignored data returned from url \(url)")
                     }

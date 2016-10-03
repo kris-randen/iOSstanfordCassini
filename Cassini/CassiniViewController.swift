@@ -21,6 +21,7 @@ class CassiniViewController: UIViewController, UISplitViewControllerDelegate
                 let imageName = (sender as? UIButton)?.currentTitle
                 ivc.imageURL = DemoURL.NASAImageNamed(imageName: imageName)
                 ivc.title = imageName
+                ivc.spinner.startAnimating() //Starting the spinner here makes it work reliably on iPhone as well. Finally!
             }
         }
     }
@@ -28,8 +29,13 @@ class CassiniViewController: UIViewController, UISplitViewControllerDelegate
     @IBAction func showImage(_ sender: UIButton) {
         if let ivc = splitViewController?.viewControllers.last?.content as? ImageViewController {
             let imageName = sender.currentTitle
+            print("\(imageName) clicked.")
             ivc.imageURL = DemoURL.NASAImageNamed(imageName: imageName)
             ivc.title = imageName
+            ivc.spinner.startAnimating()
+        } else {
+            performSegue(withIdentifier: Storyboard.SegueShowImage, sender: sender)
+            
         }
     }
     

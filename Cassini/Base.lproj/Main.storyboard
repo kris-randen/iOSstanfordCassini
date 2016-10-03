@@ -63,6 +63,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cassini" id="eSV-W3-Y3Y"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="Show Image" id="d2i-A9-K0R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfh-SB-A1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,4 +145,7 @@
             <point key="canvasLocation" x="-842.39999999999998" y="1016.9415292353824"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="d2i-A9-K0R"/>
+    </inferredMetricsTieBreakers>
 </document>
